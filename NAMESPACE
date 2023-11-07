@@ -2,3 +2,5 @@
 
 export(calc_summary_stats)
 import(dplyr)
+importFrom(stats,median)
+importFrom(stats,sd)

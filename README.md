@@ -8,8 +8,8 @@
 
 The goal of summarystats is to calculate summary statistics (range,
 mean, median, and standard deviation) for a given variable within a
-dataset, grouped by another variable. Below shows an example of its
-usage. Package dependency involves `dplyr` and `stats`.
+dataset, grouped by another variable. Package dependency involves
+`dplyr` and `stats`. Below shows examples of its usage.
 
 ## Installation
 

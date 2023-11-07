@@ -1,6 +1,6 @@
 #' Calculate Summary Statistics
 #'
-#' 'calc_summary_stats' calculates summary statistics (range, mean, median, and standard deviation)check() for a given variable within a dataset,
+#' 'calc_summary_stats' calculates summary statistics (range, mean, median, and standard deviation) for a given variable within a dataset,
 #' grouped by another variable.
 #'
 #' @param data A data frame containing the dataset.
@@ -13,6 +13,7 @@
 #' and standard deviation.
 #'
 #' @import dplyr
+#' @importFrom stats median sd
 #'
 #' @examples
 #' sepal <- calc_summary_stats(data = iris, grouping_variable = Species,data_variable = Sepal.Length)
