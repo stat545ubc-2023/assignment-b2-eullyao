@@ -6,7 +6,7 @@ test_that("calc_summary_stats with vector containing no NA's", {
   )
   result <- calc_summary_stats(data, grouping_variable, data_variable)
 
-  expect_is(result, "data.frame") # check that the resulting object is a dataframe
+  expect_type(result, "list") # check that the resulting object is a list
   expect_equal(ncol(result), 5) # check that there are 5 columns
   expect_equal(result$grouping_variable, c("A", "B")) # check that the samples are grouped correctly
   expect_equal(result$range, c(10, 10)) # check range
@@ -24,7 +24,7 @@ test_that("calc_summary_stats with vector with NA's", {
   )
   result <- calc_summary_stats(data, grouping_variable, data_variable)
 
-  expect_is(result, "data.frame") # check that the resulting object is a dataframe
+  expect_type(result, "list") # check that the resulting object is a list
   expect_equal(ncol(result), 5) # check that there are 5 columns
   expect_equal(result$grouping_variable, c("A", "B")) # check that the samples are grouped correctly
   expect_equal(result$range, c(NA, 10)) # check range
@@ -43,3 +43,4 @@ test_that("calc_summary_stats with non-numeric data_variable", {
 
   expect_error(calc_summary_stats(data, grouping_variable, data_variable))
 })
+

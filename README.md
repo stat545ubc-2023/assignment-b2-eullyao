@@ -6,9 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of summarystats is to calculate summary statistics for a given
-variable within a dataset, grouped by another variable. Below shows an
-example of its usage. Package dependency involves `dplyr`.
+The goal of summarystats is to calculate summary statistics (range,
+mean, median, and standard deviation) for a given variable within a
+dataset, grouped by another variable. Below shows an example of its
+usage. Package dependency involves `dplyr` and `stats`.
 
 ## Installation
 
@@ -26,8 +27,8 @@ for the variable `Sepal.Length` for each species:
 ``` r
 library(summarystats)
 
-sepal_length_summary <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
-print(sepal_length_summary)
+sepal <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
+print(sepal)
 #> # A tibble: 3 × 5
 #>   Species    range  mean median std_dev
 #>   <fct>      <dbl> <dbl>  <dbl>   <dbl>

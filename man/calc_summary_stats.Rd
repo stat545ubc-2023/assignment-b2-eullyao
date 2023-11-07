@@ -20,10 +20,10 @@ A data frame containing the summary statistics range, mean, median,
 and standard deviation.
 }
 \description{
-'calc_summary_stats' calculates summary statistics for a given variable within a dataset,
+'calc_summary_stats' calculates summary statistics (range, mean, median, and standard deviation)check() for a given variable within a dataset,
 grouped by another variable.
 }
 \examples{
-sepal_length_summary <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
+sepal <- calc_summary_stats(data = iris, grouping_variable = Species,data_variable = Sepal.Length)
 
 }
