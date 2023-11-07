@@ -27,11 +27,4 @@ for the variable `Sepal.Length` for each species:
 library(summarystats)
 
 sepal_length_summary <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
-print(sepal_length_summary)
-#> # A tibble: 3 × 5
-#>   Species    range  mean median std_dev
-#>   <fct>      <dbl> <dbl>  <dbl>   <dbl>
-#> 1 setosa       1.5  5.01    5     0.352
-#> 2 versicolor   2.1  5.94    5.9   0.516
-#> 3 virginica    3    6.59    6.5   0.636
 ```

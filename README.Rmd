@@ -36,6 +36,5 @@ This example calculates the summary statistics for the dataset 'iris' for the va
 library(summarystats)
 
 sepal_length_summary <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
-print(sepal_length_summary)
 
 ```
