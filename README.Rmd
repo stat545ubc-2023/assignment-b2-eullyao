@@ -28,7 +28,7 @@ You can install summarystats from Github by running:
 devtools::install_github("https://github.com/stat545ubc-2023/summarystats")
 ```
 
-## Example
+## Examples
 
 This example calculates the summary statistics for the dataset 'iris' for the variable `Sepal.Length` for each species:
 
@@ -36,5 +36,15 @@ This example calculates the summary statistics for the dataset 'iris' for the va
 library(summarystats)
 
 sepal_length_summary <- calc_summary_stats(data = iris, grouping_variable = Species, data_variable = Sepal.Length)
+print(sepal_length_summary)
+```
+
+This example calculates the summary statistics for the dataset `PlantGrowth` for the variable weight, grouped by the samples' treatment group.
+
+```{r example 2}
+library(summarystats)
+plant_weight_summary <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
+head(plant_weight_summary)
 
 ```
+
