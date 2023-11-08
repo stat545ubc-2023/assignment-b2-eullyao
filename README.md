@@ -43,8 +43,8 @@ group.
 
 ``` r
 library(summarystats)
-plant_weight_summary <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
-head(plant_weight_summary)
+weight <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
+head(weight)
 #> # A tibble: 3 × 5
 #>   group range  mean median std_dev
 #>   <fct> <dbl> <dbl>  <dbl>   <dbl>

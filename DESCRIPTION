@@ -5,7 +5,7 @@ Authors@R:
     person("Eully", "Ao", , "eullyao@student.ubc.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0003-2887-1860"))
 Description: The goal of summarystats is to calculate summary statistics (range, mean, median, and standard deviation) for a given variable within a dataset, grouped by another variable. Package dependency involves `dplyr` and `stats`.
-Imports: dplyr
+Imports: dplyr, stats
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

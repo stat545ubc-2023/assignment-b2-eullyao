@@ -43,8 +43,8 @@ This example calculates the summary statistics for the dataset `PlantGrowth` for
 
 ```{r example 2}
 library(summarystats)
-plant_weight_summary <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
-head(plant_weight_summary)
+weight <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
+head(weight)
 
 ```
 

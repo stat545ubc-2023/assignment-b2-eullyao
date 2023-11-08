@@ -25,5 +25,6 @@ grouped by another variable.
 }
 \examples{
 sepal <- calc_summary_stats(data = iris, grouping_variable = Species,data_variable = Sepal.Length)
+weight <- calc_summary_stats(data = PlantGrowth, grouping_variable = group, data_variable = weight)
 
 }
