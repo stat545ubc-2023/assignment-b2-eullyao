@@ -1,6 +1,6 @@
 Package: summarystats
 Title: Calculate Summary Statistics
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Eully", "Ao", , "eullyao@student.ubc.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0003-2887-1860"))

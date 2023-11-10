@@ -43,4 +43,3 @@ test_that("calc_summary_stats with non-numeric data_variable", {
 
   expect_error(calc_summary_stats(data, grouping_variable, data_variable))
 })
-

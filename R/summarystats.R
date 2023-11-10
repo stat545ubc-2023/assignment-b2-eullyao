@@ -22,14 +22,14 @@
 #' @export
 
 calc_summary_stats <- function(data, grouping_variable, data_variable) {
-  if (data %>%  pull({{data_variable}}) %>% is.numeric()) {
+  if (data %>%  dplyr::pull({{data_variable}}) %>% is.numeric()) {
     summary_stats <- data %>%
-      group_by({{grouping_variable}}) %>%
-      summarise(
+      dplyr::group_by({{grouping_variable}}) %>%
+      dplyr::summarise(
         range = max({{data_variable}}) - min({{data_variable}}),
         mean = mean({{data_variable}}, na.rm = TRUE),
-        median = median({{data_variable}}, na.rm = TRUE),
-        std_dev = sd({{data_variable}}, na.rm = TRUE))
+        median = stats::median({{data_variable}}, na.rm = TRUE),
+        std_dev = stats::sd({{data_variable}}, na.rm = TRUE))
     return(summary_stats)
   } else {
     stop ("The specificed 'data_variable' must contain numeric values.")
